@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">calçados</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">roupas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">futebol</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">basquete</a>
+        </li>          
+        </li>
+      </ul>
+      <img src="img/logo.png" alt="Logo A.L.I MINOTAURO" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já tem algum produto em mente??</h2>
+    <p class="banner__texto">Encontre diversos itens!</p>
+    <input type="search" class="banner__pesquisa" placeholder="O que você procura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">mais acessados</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/nike gianis.png"
+            alt="calçados"></div>
+        <div class="swiper-slide"><img src="img/under armour.png"
+            alt="calçados "></div>
+        <div class="roupas"><img src="img/nike shorts.png" alt="Livro de suspense">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/bola de volei.png" alt="acessorio esportivo" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/futbol.png" alt="acessorio esportivo" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/mengo.png" alt="roupa" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você queira fazer um cartão da loja?</h3>
+          <h2 class="descrição__titulo-livro">Com o cartão da loja você tem direito a usar pontos que são acumulados com compras de itens.</h2>
+          <p class="descrição__texto">
+          </p>
+        </div>
+        <img src="" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais comprados</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/corinthans.png"
+            alt="roupa"></div>
+        <div class="swiper-slide"><img src="img/basquete.png" alt="item de basquete">
+        </div>
+        <div class="swiper-slide"><img src="img/palmeiras.png" alt="roupa">
+        </div>
+        <div class="swiper-slide"><img src="img/kd.png" alt="calçado "></div>
+        <div class="swiper-slide"><img src="img/molten.png" alt="item de basquete"></div>
+        <div class="swiper-slide"><img src="img/chutaira.png" alt="item de futebol"></div>
+      </div>
+
+     
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">bicicleta</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">ACESSORIOS</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">ROUPAS</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">CALÇADOS</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">BASQUETE </a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">VOLEI</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">FUTEBOL</a>
+      </li>
+     
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Como descontos e novos itens.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">A.M MINOTAURO</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
